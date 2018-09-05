@@ -1,0 +1,168 @@
+
+*{
+    box-sizing: border-box
+}
+
+
+
+.bod{
+ 
+  background-image:url("../image/1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+/* navigatin bar  */
+.nav{
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    width: 300px;
+}
+.nav li{
+    margin-top: 10%;
+    text-align: left;
+    display:block;
+}
+
+.nav li a{
+    display: block;
+    margin-top: 10%;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgba(137, 43, 226, 0);
+    border-radius: 0px 40px 40px 0px ;
+    
+}
+.nav li a:hover{
+   
+    color:rgb(245, 114, 38);
+    width: 150px;
+    font-size: 18px;
+}
+
+
+/* //navigation bar  */
+
+
+
+/* transparent button  */
+
+.botton{
+    width:25%;
+    height: 80px;
+    background-color:rgba(255, 255, 255, 0) ;
+    text-align: center;
+    margin: 10%;
+    margin-left: 0%;
+}
+.botton a{
+    border-radius: 40px ;
+    border: 1px solid rgb(245, 38, 193);
+    color: beige;
+    text-align: center;
+    font-size: 14px;
+    font-family: arial bold ;
+    text-decoration: none;
+    display: block;
+    height: 20px;
+
+}
+.botton a:hover{
+    background-color: rgba(240, 248, 255, 0.521);
+    color: black;
+}
+
+/* //transparent button  */
+
+.d1{
+    margin-top: 10%;
+}
+.dm{
+    margin-top: 3%;
+    float: left;
+   width: 30%;
+  
+   margin-left: 2%;
+}
+/* side text raight */
+.dt{
+    margin-top: 0;
+    float: left;
+    width: 67%;
+    text-align: left;
+}
+.dt h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    color: white;
+}
+.dt p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+/* /side text raight */
+.lan{
+   overflow: hidden;
+    float : right;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    
+}
+
+
+.foot {
+text-align: center;
+background-color: rgba(240, 248, 255, 0.664);
+width: 100%;
+height: 30px;
+
+}
+.contact{
+    width: 50px;
+    height: 50px;
+}
+.dc{
+    margin-top: 0%;
+    float: left;
+    width: 45%;
+    text-align: center;
+}
+.dc h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    color: white;
+}
+
+.dc p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+.con{
+    margin-top: 0%;
+    float: left;
+    width:60%;
+    text-align: center;
+}
+@media screen and (max-width:1040px) {
+    .dm ,.dt {
+        width: 100%;
+    }
+    .nav{
+        position: initial;
+        list-style-type: none;
+        padding: 0;
+        width: 180px;
+        overflow: hidden;
+        width: 300px;
+    }
+}

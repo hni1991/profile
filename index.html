@@ -1,116 +1,392 @@
+<!DOCTYPE html>
 <html>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hoseinnikoo ">
-        <meta name="keywords" content="Hoseinnikoo , hosein niko,Hosein Niko,">
-    <style>
-        .topbar {
-            overflow: hidden;
-            background-color: #333;
-            position: sticky;
-            margin: 0%;
-            width: 100%;
-          }
-          
-          .topbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-          }
-          
-          .topbar a:hover {
-            background:  rgba(209, 143, 81, 0.781);
-            color: black;
-          }
-
-          .sidebar{
-              overflow: hidden;
-              width:100% ;
-              
-              background-color:rgba(221, 221, 221, 0.514) ;
-              text-align: center;
-              height:100%;
-          }
-          .mainbar{
-              overflow: hidden;
-              width: 100%;
-              background-color:rgba(221, 221, 221, 0.514) ;
-              margin-top:0%;text-align: center;
-            height:100%;
-            margin-left: 1%;
-          }
-          .footer {
-
-             left: 0;
-              bottom: 0;
-             width: 100%;
-             height: 4%;
-             background-color: rgb(14, 11, 11);
-             color: white;
-            text-align: center;
-             margin-top: 30%;
-            }
-        </style>
-<head style="background-color: grey">
-<title>Home</title>
-
-<div class="topbar">
-<a href="index.html">Home</a>
-<a href="AboutMe.html">My CV</a>
-<a href="contact.html">Contact</a>
-
-<a href="index.de.html" style="margin-left: 67%"><img src="image/gf.png" alt="" style="width:15;height:15;"> DE</a>
-
-<a href="index.html"><img src="image/uk.ico" alt="" style="width:15;height:15;"> EN</a>
-</div>
-<img src="image/hed.png" alt="hed" style="width: 100%">
-
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NEW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
 </head>
-<body style="background-color: rgb(209, 143, 81)">
- <table style="width:98% ;height:60% ;">
-     <tr>
-         <td style="width:25% ;">
-    <div class="sidebar">
-        <h1>Welcome</h1>
-        <p>My name is Hossein Niko <br>it`s my first Website <br>I try to as a webdeveloper
-        <br>How this work ?<br>you can watch the side video <br>
-        I hope you enjoy it.
+<body class="bod">
+
+<div onclick="lan()" class="lan"><img  id="lpic" src="./image/gf.png" alt="" style="width: 100% ;height:29px ; border-radius: 100%;"> </div>
+
+
+<!--main div-->
+<div class="d1">
+
+     <!--navigation bar-->
+    <div class="dm">
+   
+    <ul class="nav">
+        <li ><a id="hob" onclick="ho()" href="#" style="width:210px;border: 3px solid rgb(245, 114, 38);">Home</a> </li>
+        <li><a id="abb"  onclick="about()"href="#" style="width:190px;border: 1px solid rgb(245, 38, 193);">About Me</a> </li>
+        <li><a id="cob" onclick="contact()" href="#" style="width:170px;border: 1px solid rgb(245, 38, 193);"> contact</a></li>
+            </ul>
+  
+    </div>
+    <!--//navigation bar-->
+
+<!--home-->
+
+   <div  id="home1" class="dt">
+        <h1 id="hh1" >Hossein Niko</h1>
         
-        </p>
+        <p>IT Manager & WebDeveloper</p>
+      
+      
+        <div class="botton" ><a onclick="about()" href="#" > More About Me </a></div>
 
-        </div>  
-    </td>
-        <td style="width: 75%;">
-        <div class="mainbar">
-            <h1>Do you want your own Site?
-                   </h1>
-<p> Watch this Video</p>
-<iframe  src="https://www.youtube.com/embed/B6wuFK68sw0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      
+
+   </div>
+<!--home 2-->
+
+   <div  id="home2" class="dt" style="visibility: hidden;display: none;">
+    <h1 id="hh1" >Hossein Niko</h1>
+    
+    <p>IT Manager & WebDeveloper</p>
+  
+  
+    <div class="botton" ><a onclick="about()" href="#" > Mehr Über Mich </a></div>
+
+  
+
+</div>
+
+ <!--about cv-->
+ 
+<div id="about1" style="visibility: hidden;display: none;">
+
+    <div style="float: left;width: 30%;margin: 2%;overflow: hidden;">
+   
+   <div><img src="./image/me.jpg" alt="My Image" style="width:170px;height: 200px;border-radius: 50% ;"></div>
+   <br>
+   <br>
+   <br>
+   <div style="color: white;font-size: 20px;width:100%;display: block;">
+      <h3> About me</h3>
+      <p> Name: Hossein Niko</p>
+      <p> Location: Hamburg</p>
+      <p> E-mail: hoseinnikoo@hotmail.com</p>
+      <p> Date of Birth : 24.08.1991 in Iran </p>
+      <p> Nationality: Iranian</p>
+       <p> Marital status: Married</p>
+       
+   
+   
+   </div>
+   <br>
+   <br>
+   <br>
+   <div style="color: white;font-size: 20px;width: 100%;">
+      <h3> Education </h3>
+      <p> 05/2013 – 05/2014 : <br> MCSA, Network + (Microsaft)
+   Tehran Institute of Technology (Tehran, Iran )</p>
+   
+   <p> 09/2011 – 07/2013 : <br> Study of Software-Ingenieur( Azad Qazvin)
+   Associate`s Degree (Qazvin, Iran) </p>
+   
+   <p> 09/2008 – 07/2011 : <br> Computer`s study
+    Diploma ,Ahrar (Tehran, Iran)</p>
+   </div>
+    </div>
+   <div style="float: left;width: 30%;margin: 2%;overflow: hidden;">
+   
+   <div style="color: white;font-size: 20px;width: 100%">
+       <h3>Work Experiment </h3>
+      <p> 2014 – 2015  : <br> Independent Work ( Tehran, Iran) <br>
+       • I had a techniek business. Bought and sold laptop and
+       software <br>
+       • A lot of contact with customers</p><br>
+        
+      <p> 07/2012 – 12/2014 : <br> IT Manager (Mashal Gostar Fruzan) (Tehran-Iran ) <br><br>
+        Worked as an IT Manager in an engineering
+       company</p><br>
+   
+       <p> 06/2009 – 05/2011 : <br> Installation and development of security system as an
+        Internship. (Tehran-Iran)<br><br>
+        Started as an internship and worked in many
+       projects for installation and development of security
+       systems <br><br>
+        Customer support by phone and email </p><br>
+   
+   </div>
+   
+   <div style="color: white;font-size: 20px;width:100%;">
+      <h3> Skills </h3>
+      <p> Saftware Programmer</p>
+      
+      <p> Visual Staudio – Windows Server</p>
+   
+   </div>
+   <br>
+   <br>
+   <br>
+   
+   <div style="color: white;font-size: 20px;width: 100%;">
+       <h3>Further Skills</h3>
+       <p> Language: Persian – Native</p>
+       <p> English – B1</p>
+       <p> German – B1</p>
+       <p> Software: MS Powerpoint, MS Word – Very good
+       MS Excel – good</p>
+       <p>Adobe Photoshop - Adobe Premiere – Adobe Audition -
+        Dreamweaver</p>
+        <p style="display: none;"> Hobbies: Playing chess, reading, playing Playstation</p>
+   
+   </div>
+   </div>
+
+   </div>
+
+   <!--about2 cv-->
+ 
+<div id="about2" style="visibility: hidden;display: none;">
+
+        <div style="float: left;width: 30%;margin: 2%;overflow: hidden;">
+       
+       <div><img src="./image/me.jpg" alt="My Image" style="width:170px;height: 200px;border-radius: 50% ;display: block;"></div>
+       <br>
+       <br>
+       <br>
+       <div style="color: white;font-size: 20px;width:100%;display: block;">
+          <h3> Zur Person</h3>
+          <p> Name: Hossein Niko</p>
+          <p> Anschrift:  Hamburg</p>
+          <p> E-mail: hoseinnikoo@hotmail.com</p>
+          <p> Geburtsdatum: 24.08.1991 in Iran </p>
+          <p> Staatsangehörigkeit:  Iranian</p>
+           <p> Familienstand:  Married</p>
+           
+       
+       
+       </div>
+       <br>
+       <br>
+       <br>
+       <div style="color: white;font-size: 20px;width: 100%;">
+          <h3> Ausbildung </h3>
+          <p> 05/2013 – 05/2014 : <br> MCSA, Network + (Microsaft)
+            Technisch Complex (teheran, Iran )</p>
+       
+       <p> 09/2011 – 07/2013 : <br> Studium der Software-Ingenieur( Azad Qazvin)
+        Abschluss: Obermatura (Qazvin, Iran) </p>
+       
+       <p> 09/2008 – 07/2011 : <br> Abiture der Computer
+        Abschluss: Ahrar (Tehran, Iran)</p>
+       </div>
         </div>
-    </td>
+       <div style="float: left;width: 30%;margin: 2%;overflow: hidden;">
+       
+       <div style="color: white;font-size: 20px;width: 100%">
+           <h3>Berufserfahrung    </h3>
+          <p> 2014 – 2015  : <br> Selbständig Arbeit ( Teheran, Iran) <br>
+             Ich hatte ein Techniek Geschäft . Ich habe Laptop
+            und Software gekauft und vergekauft. <br>
+             Viel Kontakt mit Kunden/Kundin.</p><br>
+            
+          <p> 07/2012 – 12/2014 : <br> IT Manager (Mashal Gostar Fruzan) (Teheran-Iran ) <br><br>
+             Arbeitete als IT Manager in eine Ingenieuren
+            Unternehmen </p><br>
+       
+           <p> 06/2009 – 05/2011 : <br> Installation und Entwicklung von Sicherheitssystem als
+            Praktikum (Tehran-Iran)<br><br>
+             Begann als Praktikum und ich habe in vielen
+            Projekten für Installation und Entwicklung von
+            Sicherheitssystem gearbeitet<br><br>
+             Kundenbetreung per Telefon und Email    </p><br>
+       
+       </div>
+       
+       <div style="color: white;font-size: 20px;width:100%;">
+          <h3> Fähigkeiten </h3>
+          <p> Saftware Programmer</p>
+          
+          <p> Visual Staudio – Windows Server</p>
+       
+       </div>
+       <br>
+       <br>
+       <br>
+       
+       <div style="color: white;font-size: 20px;width: 100%;">
+           <h3>Weitere Kenntnisse </h3>
+           <p> Sprachen: Persisch – Muttersprache </p>
+           <p> English – B1</p>
+           <p> Deutsch – B1</p>
+           <p> Software: MS Powerpoint, MS Word – Very good
+           MS Excel – good</p>
+           <p>Adobe Photoshop - Adobe Premiere – Adobe Audition -
+            Dreamweaver</p>
+            <p style="display: none;"> Hobby: Schach Spielen , Lesen, Playstation Spiele</p>
+       
+       </div>
+       </div>
+    
+       </div>
 
-    </tr>
-    </table>
+   <!--contact-->
+   
+<div id="contact1" class="con" style="visibility: hidden;display: none">
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303353.65349957254!2d9.647641970022839!3d53.55865255652368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg!5e0!3m2!1sen!2sde!4v1536136530406" width="40%" height="450" frameborder="0" style="border:0;float: left;margin-top:3% ;" allowfullscreen></iframe></div>
+
+<div class="dc">
+  
+   
+<p>Tel:01639741048</p> 
+<p> postal code: 22143,Hamburg,Germany </p>
+<p> E-Mail: hoseinnikoo@hotmail.com</p>
+<br>
+<br>
+
+    <div>
+    <a href="https://www.facebook.com/hosein.niko"><img class="contact" src="./image/fa.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/hosseinniko/"><img  class="contact" src="./image/in.png" alt=""></a>
+    </div>
+
+
+</div>
+
+
+</div>
+   <!--contact2-->
+   
+   <div id="contact2" class="con" style="visibility: hidden;display: none">
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303353.65349957254!2d9.647641970022839!3d53.55865255652368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg!5e0!3m2!1sen!2sde!4v1536136530406" width="40%" height="450" frameborder="0" style="border:0;float: left;margin-top:3% ;" allowfullscreen></iframe></div>
+
+<div class="dc">
+  
+   
+<p>Tel:01639741048</p> 
+<p> postfach: 22143,Hamburg,Germany </p>
+<p> E-Mail: hoseinnikoo@hotmail.com</p>
+<br>
+<br>
+
+    <div>
+    <a href="https://www.facebook.com/hosein.niko"><img class="contact" src="./image/fa.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/hosseinniko/"><img  class="contact" src="./image/in.png" alt=""></a>
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+</div>  
+
+<script>
+        function lan(){
+            if(document.getElementById("lpic").getAttribute("src")=="./image/gf.png"){
+            document.getElementById("lpic").setAttribute("src","./image/uk.ico")
+        document.getElementById("home1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home2").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 3px solid rgb(245, 114, 38);")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 1px solid rgb(245, 38, 193);") 
+           
+        }
+        
+           else{
+            document.getElementById("lpic").setAttribute("src","./image/gf.png")
+            document.getElementById("home2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home1").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 3px solid rgb(245, 114, 38);")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 1px solid rgb(245, 38, 193);")
+        }
+        
+    }
+        function ho(){
+            if(document.getElementById("lpic").getAttribute("src")=="./image/uk.ico"){
+        document.getElementById("home1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home2").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 3px solid rgb(245, 114, 38);")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 1px solid rgb(245, 38, 193);") 
+            }else{
+        document.getElementById("home2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home1").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 3px solid rgb(245, 114, 38);")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 1px solid rgb(245, 38, 193);")
+    }
+             }
+    
+        function about(){
+            if(document.getElementById("lpic").getAttribute("src")=="./image/uk.ico"){
+        document.getElementById("home1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 3px solid rgb(245, 114, 38);")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 1px solid rgb(245, 38, 193);") 
+            }else{
+        document.getElementById("home2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home1").setAttribute("style","visibility:hidden; display: none;width: 0%;")
+        document.getElementById("about1").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 3px solid rgb(245, 114, 38);")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 1px solid rgb(245, 38, 193);")
+    }
+             } 
+
+         function contact(){
+            if(document.getElementById("lpic").getAttribute("src")=="./image/uk.ico"){
+        document.getElementById("home1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: visibel;float: left;display:block;width: 60%;")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 1px solid rgb(245, 38, 193)")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 3px solid rgb(245, 114, 38);;")
+    }else{ 
+        document.getElementById("home2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about2").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("home1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("about1").setAttribute("style","visibility: hidden;display: none;")
+        document.getElementById("contact1").setAttribute("style","visibility: visibel;float: left;display:block;;width: 60%;")
+        document.getElementById("hob").setAttribute("style","width:210px;border: 1px solid rgb(245, 38, 193)")
+        document.getElementById("abb").setAttribute("style","width:190px;border: 1px solid rgb(245, 38, 193);")
+        document.getElementById("cob").setAttribute("style","width:170px;border: 3px solid rgb(245, 114, 38);;")
+    }
+         }    
+        
+        </script>
 
 
 
 
-
-
-
+        
 </body>
-<footer>
-        <div class="footer">
-      <p>Copyright © 2018 by Hosein Niko All Rights Reserved</p>
-        </div>
-      
-      
-      </footer>
-      
-
-
 
 </html>
