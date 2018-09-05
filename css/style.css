@@ -54,7 +54,7 @@
 /* transparent button  */
 
 .botton{
-    width:25%;
+    width:200px;
     height: 80px;
     background-color:rgba(255, 255, 255, 0) ;
     text-align: center;
@@ -153,8 +153,28 @@ height: 30px;
     width:60%;
     text-align: center;
 }
+.cvt{
+    float: left;
+    width:45%;
+    margin: 2%;
+    overflow: hidden;
+    
+  }
+  .m1{
+    width:210px;
+  }
+  .m2{
+    width:190px;
+  }
+  .m3{
+    width:170px;
+  }
+  .map{
+      width: 45%;
+  }
+ 
 @media screen and (max-width:1040px) {
-    .dm ,.dt {
+    .dm ,.dt,.m1,.m2,.m3 {
         width: 100%;
     }
     .nav{
@@ -163,6 +183,54 @@ height: 30px;
         padding: 0;
         width: 180px;
         overflow: hidden;
-        width: 300px;
+        width: 500px;
     }
+
+    .cvt{
+      float: left;
+      width:100%;
+      margin: 2%;
+      overflow: hidden;
+      
+    }
+    .dc{
+        margin-top: 0%;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .map{
+        width: 100%;
+    }
+    
 }
+@media screen and (max-width:600px) {
+    .dm ,.dt,.m1,.m2,.m3 {
+        width: 100%;
+    }
+    .nav{
+        position: initial;
+        list-style-type: none;
+        padding: 0;
+        width: 180px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .cvt{
+      float: left;
+      width:100%;
+      margin: 2%;
+      overflow: hidden;
+      
+    }
+    .dc{
+        margin-top: 0%;
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .map{
+        width: 100%;
+    }
+     }
