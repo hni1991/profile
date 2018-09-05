@@ -42,7 +42,7 @@
 .nav li a:hover{
    
     color:rgb(245, 114, 38);
-    width: 150px;
+    
     font-size: 18px;
 }
 
@@ -233,4 +233,5 @@ height: 30px;
     .map{
         width: 100%;
     }
+   
      }
